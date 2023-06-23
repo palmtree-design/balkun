@@ -28,7 +28,7 @@ ul{
     background-image: url(../img/top-img.jpg);
     background-position: center;
 }
-.top-massage{
+.top-message{
     background-color: rgba(247, 147, 35, 0.5);
     font-size: 4rem;
     line-height: 1.7;
@@ -67,3 +67,22 @@ h1{
 .nav-item{
     padding: 20px 15px;
 }
+
+/* topここまで------------------------------------------ */
+
+
+/* #message--------------------------------------------- */
+.bold{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 0 0 3.1rem 0;
+}
+.message-txt{
+    text-align: center;
+    margin: 6rem 0 7.5rem 0;
+}
+.message-txt p{
+    font-size: 1.25rem;
+}
+
+/* #messageここまで------------------------------------- */
