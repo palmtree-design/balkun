@@ -4,6 +4,7 @@
 
 body{
     font-size: 16px;
+    color: #333;
 }
 
 ul{
@@ -18,6 +19,7 @@ ul{
 .wrapper{
     max-width: 1100px;
     margin: 0 auto;
+    padding: 0 50px;
 }
 
 
@@ -60,9 +62,10 @@ h1{
 .nav-list{
     margin-top: 80px;
     width: 923px;
-    border: 1px solid #000101;
+    border: 1px solid #333;
     border-radius: 50px;
     background-color: #fff;
+    margin: 0 auto;
 }
 .nav-item{
     padding: 20px 15px;
@@ -72,10 +75,10 @@ h1{
 
 
 /* #message--------------------------------------------- */
-.bold{
-    font-size: 2.5rem;
-    font-weight: 600;
-    padding: 0 0 3.1rem 0;
+.message-txt h2{
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin: 0 0 3.1rem 0;
 }
 .message-txt{
     text-align: center;
@@ -84,5 +87,43 @@ h1{
 .message-txt p{
     font-size: 1.25rem;
 }
-
 /* #messageここまで------------------------------------- */
+
+
+/* #anxiety-------------------------------------------- */
+#anxiety{
+    background-image: url(../img/anxiety-bg.png);
+    background-position: center;
+    padding-bottom: 80px;
+}
+.anxiety-1{
+    padding-top: 100px;
+}
+.anxiety-1,.anxiety-2 p{
+    text-align: center;
+}
+.anxiety-title{
+    font-size: 2.5rem;
+    display: inline-block;
+    border-bottom: 4px solid #F8931F;
+    margin-bottom: 50px;
+}
+.anxiety-1 div{
+    margin: 50px 0;
+}
+.anxiety-2{
+    margin-top: 50px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 40px;
+}
+.anxiety-2 p{
+    font-size: 1.875rem;
+    font-weight: 600;
+    padding: 30px 0;
+}
+.anxiety-2-box{
+    padding-bottom: 50px;
+}
+/* #anxietyここまで-------------------------------------------- */
