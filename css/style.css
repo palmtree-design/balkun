@@ -22,6 +22,31 @@ ul{
     padding: 0 50px;
 }
 
+/* h2 title */
+.eng{
+    font-size: 2.5rem;
+}
+.jpn{
+    font-size: 1.25rem;
+    background-color: #F8931F;
+    color: #fff;
+}
+.title-box{
+    margin-top: 100px;
+}
+.title-item{
+    background-image: url(../img/h2-img.png);
+    background-repeat: no-repeat;
+    max-width: 38%;
+    margin: 0 auto;
+    height: 112px;
+}
+.eng, .jpn{
+    position: relative;
+    left: 5%;
+    z-index: -1;
+    padding-left: 22%;
+}
 
 /* top------------------------------------------ */
 
