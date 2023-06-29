@@ -60,6 +60,13 @@ a{
     padding-left: 22%;
 }
 
+/* background-------------- */
+#events,#process{
+    background-image: url(../img/section-bg.png);
+    z-index: 0;
+    position: relative;
+    padding: 10px 0 80px 0;
+}
 
 
 
@@ -288,12 +295,6 @@ h1{
 /* creatorsここまで------------------------------------------- */
 
 /* events ----------------------------------------------------*/
-#events{
-    background-image: url(../img/section-bg.png);
-    z-index: 0;
-    position: relative;
-    padding: 10px 0 80px 0;
-}
 .bgc{
     background-color: rgba(255, 255, 255, 0.7);
     margin: 50px 0 100px 0;
@@ -321,7 +322,7 @@ h1{
 .voice-flexitem img{
     display: block;
     border-radius: 30px;
-    border: 3px solid #F15A25;
+    border: 4px solid #F15A25;
 
 }
 .voice-flexitem h4{
@@ -338,3 +339,114 @@ h1{
     margin-left: auto;
 }
 /* voiceここまで-------------------------------------------- */
+
+/* process-------------------------------------------------- */
+.process-list{
+    width: 45%;
+    margin: 0 auto;
+}
+.process-dt1,.process-dt2,.process-dt3{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1;
+    padding-left: 5%;
+}
+.process-dt1{
+    color: #F8931F;
+}
+.process-dt2{
+    color: #F15A25;
+}
+.process-dt3{
+    color: #EC1D1D;
+}
+.process-bg1{
+    background-color: #fff;
+    background-image: url(../img/process-1.png);
+    background-position: 90% 80%;
+    border: 1px solid #333;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #a09e9e;
+    padding: 20px;
+    height: 286px;
+}
+.process-bg2{
+    background-color: #fff;
+    background-image: url(../img/process-2.png);
+    background-position: 90% 80%;
+    border: 1px solid #333;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #a09e9e;
+    padding: 20px;
+    height: 286px;
+}
+.process-bg3{
+    background-color: #fff;
+    background-image: url(../img/process-3.png);
+    background-position: 90% 90%;
+    border: 1px solid #333;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #a09e9e;
+    padding: 20px;
+    height: 286px;
+}
+
+.process-dditem{
+    font-size: 1.75rem;
+    text-align: center;
+    margin: 0 0 25px 0;
+    font-weight: 600;
+}
+.process-ddtext{
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.arrow{
+    padding-top: 7px;
+    width: 31px;
+    margin: 0 auto;
+}
+/* processここまで------------------------------------------ */
+
+/* question----------------------------------------------- */
+details{
+    width: 720px;
+    margin: 20px auto;
+    font-size: 1.25rem;
+    border: 4px solid#F15A25;
+    background-color: #FEEFDD;
+}
+summary{
+    font-size: 1.75rem;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 12px 0 0;
+}
+.details-txt{
+    padding: 15px 0;
+}
+.blue{
+    font-size: 1.75rem;
+    font-weight: bolder;
+    color: #9AD3EB;
+    margin: 0 10px 0 30px;
+}
+.red{
+    font-size: 1.75rem;
+    font-weight: bolder;
+    color: #F05A24;
+    margin: 0 10px 0 30px;
+}
+summary::-webkit-details-marker {
+    display: none;
+  }
+  .summary-content img{
+    transition: transform 0.4s;
+  }
+  details[open] .summary-content img {
+    transform: rotate(45deg);
+  }
+/* questionここまで---------------------------------------- */
