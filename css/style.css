@@ -61,7 +61,7 @@ a{
 }
 
 /* background-------------- */
-#events,#process{
+#events,#process,#contact{
     background-image: url(../img/section-bg.png);
     z-index: 0;
     position: relative;
@@ -449,4 +449,55 @@ summary::-webkit-details-marker {
   details[open] .summary-content img {
     transform: rotate(45deg);
   }
+  details:last-child{
+    margin-bottom: 100px;
+  }
 /* questionここまで---------------------------------------- */
+
+/* contact------------------------------------------------- */
+.contact-message{
+    background-color: #fff;
+    border: 1px solid #333;
+    box-shadow: 4px 4px 4px #a09e9e;
+    text-align: center;
+    padding: 50px 0;
+    width: 850px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+/* contactここまで-------------------------------------------- */
+
+/* footer--------------------------------------------- */
+footer{
+    background-color: #FAAE57;
+    background-image: url(../img/footer-bgimg.png);
+    background-position: 80% 70%;
+    padding: 100px 0;
+
+}
+.footer{
+    width: 790px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 70px;
+}
+footer p{
+    font-size: 1.75rem;
+    border-bottom: 1px solid #F8931F;
+    display: inline-block;
+    padding: 50px 0 0 20px;
+    margin-bottom: 40px;
+}
+.footer-dllist{
+    display: flex;
+    margin: 10px 0 15px 80px;
+}
+.footer-dllist dt{
+    width: 150px;
+    padding: 0 25px;
+    border-bottom: 1px solid #333;
+    margin-right: 50px;
+}
