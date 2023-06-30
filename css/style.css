@@ -143,6 +143,9 @@ h1{
     background-image: url(../img/anxiety-bg.png);
     background-position: center;
     padding-bottom: 80px;
+    outline: 1px solid #333;
+    outline-offset: -20px;
+
 }
 .anxiety-1{
     padding-top: 100px;
