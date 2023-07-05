@@ -101,6 +101,12 @@ a{
     }
 }
 
+@media screen and (max-width: 490px) {
+    .wrapper{
+        max-width: 330px;
+    }
+}
+
 
 
 /* top------------------------------------------ */
@@ -134,7 +140,7 @@ h1{
     font-size: 3rem;
     font-weight: bold;
     margin: 60px 0;
-    text-shadow: 4px 4px  #fff;
+    text-shadow: 2px 2px  #fff;
     /* -webkit-text-stroke: 1px rgb(255, 255, 255);  */
 }
 
@@ -154,7 +160,26 @@ h1{
     }
         }
 
-
+    @media screen and (max-width: 490px) {
+        .top-img{
+            background-image: url(../img/sp-topIMG.jpg);
+        }
+        .top-message{
+            font-size: 2rem;
+            padding: 0 20px;
+        }
+        .top-position{
+            margin-left: 10%;
+            padding-top: 6%;
+        }
+        .top-position h3{
+            font-size: 1.18rem;
+        }
+        h1{
+            font-size: 1.31rem;
+        }
+    
+        }
 /* nav-------------- */
 .nav-list{
     margin-top: 80px;
@@ -201,7 +226,19 @@ h1{
         text-align: left;
     }
     }
-    
+@media screen and (max-width: 490px) {
+    .message-txt{
+        margin: 50px 0;
+    }
+    .message-txt h2{
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    .message-txt p{
+        font-size: 0.81rem;
+    }
+
+}
 /* #messageここまで------------------------------------- */
 
 
@@ -277,10 +314,48 @@ h1{
     }
     }
 
+    @media screen and (max-width: 490px) {
+        .anxiety-1 div img{
+            width: 310px;
+        }
+        .anxiety-2{
+            width: 330px;
+        }
+        .anxiety-2-box :first-child img{
+            width: 250px;
+            padding: 0 0 0 5px;
+        }
+        .anxiety-2-box :last-child img{
+            padding: 0;
+            width: 65px;
+
+        }
+        .anxiety-2-box :last-child {
+            padding: 90px 5px 0 0;
+        }
+    
+        .anxiety-2-box{
+            padding-bottom: 10px;
+        }
+        .anxiety-title{
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+        .anxiety-2 p{
+            font-size: 1rem;
+            padding: 20px 5px;
+        }
+        #anxiety{
+            padding-bottom: 40px;
+            outline-offset: -10px;
+        }
+        
+}
+
 /* #anxietyここまで-------------------------------------------- */
 
 /* #about-------------------------------------------------- */
-.bold{
+.about-message-txt-h3{
     font-size: 2.5rem;
     font-weight: bold;
 }
@@ -322,7 +397,7 @@ h1{
     background-image: url(../img/about-4.png);
     background-position: bottom 10px right 10px;
 }
-.message-txt h3{
+.about-message-txt-h3{
     margin: 0 0 2rem 0;
 }
 
@@ -362,15 +437,25 @@ h1{
         background-image: url(../img/about-4.png);
         background-size: 150px 100px;
     }
-    .about-message-txt h3{
-        font-size: 1.125rem;
+    .about-message-txt-h3{
+        font-size: 1rem;
         margin: 0 0 1rem 0;
     }
     .about-message-txt p{
-        font-size: 0.875rem;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 490px) {
+    
+    .about-list{
+        width: 235px;
+        margin: 50px auto;
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
     
 }
+
 
 /* 無限スライド--------------------------------- */
 .loop {
@@ -442,9 +527,9 @@ h1{
 
 @media screen and (max-width: 1100px) {
     .creators-list{
-    grid-template-columns: 1fr 1fr;
-    column-gap: 12% ;
-    row-gap: 50px;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 12% ;
+        row-gap: 50px;
     }
     .tiktok-btn{
         background-size: 10px 14px;
@@ -463,7 +548,25 @@ h1{
     }
 
 }
-
+@media screen and (max-width: 490px) {
+    .creators-list{
+        grid-template-columns: 1fr ;
+        column-gap: 12% ;
+        row-gap: 50px;
+        }
+        .creators-img{
+            display: block;
+        }
+        .creators-item{
+            margin: 0 auto;
+        }
+        .creators-cap{
+            margin-top: 10px;
+        }
+        .events-caption{
+            margin-bottom: 10px;
+        }
+    }
 
 /* creatorsここまで------------------------------------------- */
 
@@ -486,9 +589,6 @@ h1{
 @media screen and (max-width: 1100px) {
 
 
-    /* #events .flex{
-        flex-wrap: wrap;
-    } */
     .events-txt{
         font-size: 0.875rem;
     }
@@ -503,6 +603,15 @@ h1{
         font-size: 0.5rem;
     }
     }
+    @media screen and (max-width: 490px) {
+    #events .flex{
+        flex-wrap: wrap;
+    }
+    .bgc{
+        margin: 20px 0 0 0;
+    }
+    }
+
 /* eventsここまで----------------------------------------------*/
 
 /* voice-------------------------------------------------- */
@@ -544,7 +653,27 @@ h1{
         font-size: 0.75rem;
         width: 260px;
     }
+@media screen and (max-width: 490px) {
+    .voice-bg .flex{
+        display: block;
+    }
+    .voice-flexitem{
+        padding-top: 20px;
+        margin: 0;
+    }
+    .voice-flexitem img{
+        margin: 0 auto;
+    }
+    .voice-flexitem h4{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .voice-flexitem p{
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
 
+}
 
 }
 
@@ -704,6 +833,14 @@ summary::-webkit-details-marker {
         margin-left: 10px;
     }
   }
+  @media screen and (max-width: 490px) {
+    details{
+        width: 330px;
+        margin: 5px auto;
+        font-size: 0.8rem;
+    }
+  }
+
 /* questionここまで---------------------------------------- */
 
 /* contact------------------------------------------------- */
@@ -722,6 +859,12 @@ summary::-webkit-details-marker {
 @media screen and (max-width: 1100px) {
     .contact-message{
         font-size: 0.75rem;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .contact-message{
+        font-size: 0.5rem;
+        padding: 30px 0;
     }
 }
 
