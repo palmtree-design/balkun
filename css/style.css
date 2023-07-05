@@ -69,10 +69,15 @@ a{
         font-size: 0.75rem;
         line-height: 2.2;
     }
+    .title-box{
+        margin: 60px 0 40px 0;
+    }
+
     .title-item{
         background-size: 61px 75px;
-        max-width: 250px;
-        padding-left: 20px;
+        max-width: 230px;
+        padding: 0 10px;
+        height: 80px;
     }
     
 }
@@ -360,9 +365,6 @@ h1{
     .about-message-txt p{
         font-size: 0.875rem;
     }
-    .about-message-txt{
-
-    }
     
 }
 
@@ -437,6 +439,8 @@ h1{
 @media screen and (max-width: 1100px) {
     .creators-list{
     grid-template-columns: 1fr 1fr;
+    column-gap: 12% ;
+    row-gap: 50px;
     }
     .tiktok-btn{
         background-size: 10px 14px;
@@ -444,7 +448,7 @@ h1{
         font-size: 0.625rem;
         width: 160px;
         padding-left: 18px;
-        margin: 0 auto;
+        margin: 15px auto;
     }
     .creators-cap{
         font-size: 0.625rem;
@@ -476,10 +480,25 @@ h1{
 }
 
 @media screen and (max-width: 1100px) {
-    #events .flex{
+
+
+    /* #events .flex{
         flex-wrap: wrap;
+    } */
+    .events-txt{
+        font-size: 0.875rem;
     }
-}
+    .flex figure{
+        margin: 0 5px;
+    }
+
+    .events-img{
+        width: 146px;
+    }
+    .events-caption{
+        font-size: 0.5rem;
+    }
+    }
 /* eventsここまで----------------------------------------------*/
 
 /* voice-------------------------------------------------- */
@@ -509,6 +528,22 @@ h1{
 .left-title{
     margin-left: auto;
 }
+
+@media screen and (max-width: 1100px) {
+    .voice-flexitem img{
+        width: 130px;
+    }
+    .voice-flexitem h4{
+        padding: 15px 0 0 0;
+    }
+    .voice-flexitem p{
+        font-size: 0.75rem;
+        width: 260px;
+    }
+
+
+}
+
 /* voiceここまで-------------------------------------------- */
 
 /* process-------------------------------------------------- */
@@ -578,6 +613,29 @@ h1{
     width: 31px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 1100px) {
+    .process-list{
+        width: 210px;
+    }
+    .process-dt1,.process-dt2,.process-dt3{
+        font-size: 1.75rem;
+    }
+    .process-dditem{
+        font-size:0.8rem;
+    }
+    .process-ddtext{
+        font-size: 0.5rem;
+    }
+    .process-bg1,.process-bg2,.process-bg3{
+        background-size: 50%;
+        height: auto;
+        padding: 10px;
+    }
+
+
+
+    }
 /* processここまで------------------------------------------ */
 
 /* question----------------------------------------------- */
@@ -626,7 +684,9 @@ summary::-webkit-details-marker {
 
   @media screen and (max-width: 1100px) {
     details{
-        width: 490px;
+        width: auto;
+        margin: 5px 10px;
+        font-size: 0.8rem;
     }
     summary{
         font-size: 0.8rem;
@@ -635,7 +695,7 @@ summary::-webkit-details-marker {
     .summary-content img{
         width: 18px;
     }
-    .blue{
+    .blue,.red{
         font-size: 0.8rem;
         margin-left: 10px;
     }
@@ -655,6 +715,12 @@ summary::-webkit-details-marker {
     font-weight: 600;
     margin-bottom: 60px;
 }
+@media screen and (max-width: 1100px) {
+    .contact-message{
+        font-size: 0.75rem;
+    }
+}
+
 
 /* contactここまで-------------------------------------------- */
 
@@ -689,3 +755,25 @@ footer p{
     border-bottom: 1px solid #333;
     margin-right: 50px;
 }
+
+@media screen and (max-width: 1100px) {
+    .footer{
+        padding-bottom: 40px;
+    }
+
+    footer p{
+        padding: 40px 40px 0 40px;
+        font-size: 1rem;
+    }
+    .footer-dllist{
+        font-size: 0.6rem;
+    }
+    .footer-dllist dt{
+        width: 70px;
+        padding: 0;
+    }
+
+    footer{
+        background-size: 30%;
+    }
+    }
