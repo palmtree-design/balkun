@@ -27,14 +27,14 @@ a{
 
 /* contact-btn */
 .contact-btn{
-    position: fixed;
+    text-align: center;
+    position: sticky;
+    top: 90%;
     z-index: 10;
-    bottom: 2%;
-    right: 2%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     .contact-btn img{
-        width: 350px;
+    width: 350px;
     }
 }
 
