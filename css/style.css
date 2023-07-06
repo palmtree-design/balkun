@@ -227,69 +227,65 @@ h1 {
     }
 }
 
-.menu-btn {
+.MenuBtn.Style01 {
     display: none;
     position: fixed;
     top: 20px;
     right: 20px;
-
     width: 50px;
     height: 50px;
     justify-content: center;
     align-items: center;
-    z-index: 3;
     border: solid 2px #000000;
+    z-index: 2;
 }
 
-.menu-btn .MenuBtn-BarFrame {
+.MenuBtn.Style01 .MenuBtn-BarFrame {
     position: relative;
     display: block;
     width: 24px;
     height: 2px;
+    z-index: 3;
 }
 
-.menu-btn .MenuBtn-BarFrame-FirstBar {
+.MenuBtn.Style01 .MenuBtn-BarFrame-FirstBar {
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
     background-color: #000000;
     transition: all .15s linear;
-
-
 }
 
-.menu-btn .MenuBtn-BarFrame-SecondBar {
+.MenuBtn.Style01 .MenuBtn-BarFrame-SecondBar {
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
     background-color: #000000;
     transition: all .15s linear;
-
     transform: translateY(-8px) rotate(0deg);
 }
 
-.menu-btn .MenuBtn-BarFrame-ThirdBar {
+.MenuBtn.Style01 .MenuBtn-BarFrame-ThirdBar {
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
     background-color: #000000;
     transition: all .15s linear;
-
     transform: translateY(8px) rotate(0deg);
 }
 
-.menu-btn.isClosed .MenuBtn-BarFrame-FirstBar {
+.MenuBtn.Style01.isClosed .MenuBtn-BarFrame-FirstBar {
     opacity: 0;
 }
 
-.menu-btn.isClosed .MenuBtn-BarFrame-SecondBar {
+.MenuBtn.Style01.isClosed .MenuBtn-BarFrame-SecondBar {
     transform: translateY(0) rotate(45deg);
 }
 
-.menu-btn.isClosed .MenuBtn-BarFrame-ThirdBar {
+.MenuBtn.Style01.isClosed .MenuBtn-BarFrame-ThirdBar {
     transform: translateY(0) rotate(-45deg);
 }
 
@@ -302,7 +298,6 @@ h1 {
     height: 100vh;
     background: #fff;
     color: #111;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -330,22 +325,24 @@ h1 {
     font-weight: bold;
     letter-spacing: 0.02em;
 }
-.hbg-menu{
+
+.hbg-menu {
     transform: translateX(100vw);
     transition: all .3s linear;
-  }
-  /* アニメーション後のメニューの状態 */
-  .hbg-menu.is-active{
+}
+
+/* アニメーション後のメニューの状態 */
+.hbg-menu.is-active {
     transform: translateX(0);
-  }
+}
 
 @media screen and (max-width: 1100px) {
-    .menu-btn{
+    .MenuBtn.Style01 {
         display: flex;
     }
 
     .hbg-menu {
-        display: block;
+        display: flex;
     }
 }
 
