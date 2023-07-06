@@ -643,7 +643,10 @@ h1{
 
 .voice-bg{
     background-color: rgba(247, 147, 35, 0.5);
-    margin: 10px 0;
+    margin: 10px 0 0 0;
+}
+.voice-bg:last-child{
+    margin-bottom: 100px;
 }
 .voice-flexitem{
     margin: 20px 0;
