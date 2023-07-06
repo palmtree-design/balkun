@@ -29,7 +29,7 @@ a{
 .contact-btn{
     text-align: center;
     position: sticky;
-    top: 90%;
+    top: 85%;
     z-index: 10;
 }
 @media screen and (max-width: 500px) {
@@ -218,6 +218,10 @@ h1{
 }
 
 @media screen and (max-width: 1100px) {
+    .message-txt{
+        text-align: center;
+        margin: 0 0 5rem 0;
+    }
     .message-txt h2{
         font-size: 1.43rem;
     }
@@ -284,6 +288,10 @@ h1{
 .anxiety-2-box{
     padding-bottom: 30px;
 }
+.anxiety-2-box p{
+    font-size: 12px;
+    padding: 5px;
+}
 @media screen and (max-width: 1100px) {
     .anxiety-title{
         font-size: 1.35rem;
@@ -312,6 +320,11 @@ h1{
     .anxiety-2{
         width: 440px;
     }
+    .anxiety-2-box p{
+        font-size: 10px;
+        padding: 5px;
+    }
+    
     }
 
     @media screen and (max-width: 490px) {
@@ -350,6 +363,11 @@ h1{
             outline-offset: -10px;
         }
         
+        .anxiety-2 .caracter-name{
+            font-size: 5px;
+            padding-top: 3px;
+        }
+    
 }
 
 /* #anxietyここまで-------------------------------------------- */
@@ -443,6 +461,9 @@ h1{
     }
     .about-message-txt p{
         font-size: 0.8rem;
+    }
+    .about-message-txt{
+        margin: 0 10px;
     }
 }
 @media screen and (max-width: 490px) {
@@ -615,6 +636,11 @@ h1{
 /* eventsここまで----------------------------------------------*/
 
 /* voice-------------------------------------------------- */
+.flex1,.flex2,.flex3{
+    display: flex;
+    justify-content: center;
+}
+
 .voice-bg{
     background-color: rgba(247, 147, 35, 0.5);
     margin: 10px 0;
@@ -654,11 +680,8 @@ h1{
         width: 260px;
     }
 @media screen and (max-width: 490px) {
-    .voice-bg .flex{
-        display: block;
-    }
     .voice-flexitem{
-        padding-top: 20px;
+        padding: 20px 0 0 0 ;
         margin: 0;
     }
     .voice-flexitem img{
@@ -671,6 +694,12 @@ h1{
     .voice-flexitem p{
         margin: 0 auto;
         padding-bottom: 20px;
+    }
+    .flex1,.flex2,.flex3{
+        flex-direction: column;
+    }
+    .flex2{
+        flex-direction: column-reverse;
     }
 
 }
@@ -924,4 +953,23 @@ footer p{
     footer{
         background-size: 30%;
     }
+}
+
+    @media screen and (max-width: 490px) {
+    .footer{
+        padding-bottom: 40px;
+        max-width: 350px;
     }
+    .footer-dllist{
+        display: block;
+        margin: 10px 10px 15px 20px;
+    }
+    .footer-dllist dt{
+        margin: 10px auto;
+        padding: 1rem 1rem 0 1rem;
+    }
+    footer p{
+        margin-bottom: 30px;
+
+    }
+}
