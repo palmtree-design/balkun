@@ -277,15 +277,15 @@ h1 {
     transform: translateY(8px) rotate(0deg);
 }
 
-.MenuBtn.Style01.isClosed .MenuBtn-BarFrame-FirstBar {
+.MenuBtn.Style01.active .MenuBtn-BarFrame-FirstBar {
     opacity: 0;
 }
 
-.MenuBtn.Style01.isClosed .MenuBtn-BarFrame-SecondBar {
+.MenuBtn.Style01.active .MenuBtn-BarFrame-SecondBar {
     transform: translateY(0) rotate(45deg);
 }
 
-.MenuBtn.Style01.isClosed .MenuBtn-BarFrame-ThirdBar {
+.MenuBtn.Style01.active .MenuBtn-BarFrame-ThirdBar {
     transform: translateY(0) rotate(-45deg);
 }
 
@@ -329,12 +329,12 @@ h1 {
 
 .hbg-menu {
     transform: translateX(100vw);
-    transition: all .3s linear;
+    transition: all .5s linear;
     display: none;
 }
 
 /* アニメーション後のメニューの状態 */
-.hbg-menu.is-active {
+.hbg-menu.active {
     transform: translateX(0);
     display: block;
     z-index: 15;

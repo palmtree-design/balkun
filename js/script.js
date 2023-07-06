@@ -1,12 +1,27 @@
 'use strict';
 
+$(function () {
+    // ハンバーガーボタンクリックで実行
+    $(".MenuBtn").click(function () {
+        $(this).toggleClass("active");
+        $(".hbg-menu").toggleClass("active");
+    });
 
-document.querySelector('.MenuBtn').addEventListener('click', function(){
-    document.querySelector('.hbg-menu').classList.toggle('is-active');
-    document.querySelector('.MenuBtn').classList.toggle('isClosed');
-});
+    $(".Menu-Group-Item-Link").click(function () {
+        $(".MenuBtn").removeClass("active");
+        $(".hbg-menu").removeClass("active");
+    });
 
-document.querySelector('.Menu-Group-Item').addEventListener('click', function(){
-    document.querySelector('.hbg-menu').classList.remove('is-active');
-    document.querySelector('.MenuBtn').classList.remove('isClosed');
+    // ページ内スクロール
+    $('a[href^="#"]').click(function () {
+        const speed = 1;
+        let href = $(this).attr("href");
+        let target = $(href == "#" || href == "" ? "html" : href);
+        let position = target.offset().top;
+        $("body,html").animate({
+            scrollTop: position
+        }, speed, "swing");
+        return false;
+    });
+    // function
 });
