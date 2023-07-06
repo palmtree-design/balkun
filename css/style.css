@@ -237,7 +237,7 @@ h1 {
     justify-content: center;
     align-items: center;
     border: solid 2px #000000;
-    z-index: 2;
+    z-index: 20;
 }
 
 .MenuBtn.Style01 .MenuBtn-BarFrame {
@@ -245,7 +245,7 @@ h1 {
     display: block;
     width: 24px;
     height: 2px;
-    z-index: 3;
+    z-index: 30;
 }
 
 .MenuBtn.Style01 .MenuBtn-BarFrame-FirstBar {
@@ -291,7 +291,7 @@ h1 {
 
 .hbg-menu {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -329,11 +329,14 @@ h1 {
 .hbg-menu {
     transform: translateX(100vw);
     transition: all .3s linear;
+    display: none;
 }
 
 /* アニメーション後のメニューの状態 */
 .hbg-menu.is-active {
     transform: translateX(0);
+    display: block;
+    z-index: 15;
 }
 
 @media screen and (max-width: 1100px) {
