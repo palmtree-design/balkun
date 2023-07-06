@@ -288,9 +288,16 @@ h1{
 .anxiety-2-box{
     padding-bottom: 30px;
 }
-.anxiety-2-box p{
+.anxiety-2-box .caracter-name2{
     font-size: 12px;
     padding: 5px;
+}
+.anxiety-2-box .caracter-name2{
+    font-size: 12px;
+    padding: 5px;
+}
+.anxiety-2-box .caracter-name1{
+    display: none;
 }
 @media screen and (max-width: 1100px) {
     .anxiety-title{
@@ -320,11 +327,13 @@ h1{
     .anxiety-2{
         width: 440px;
     }
-    .anxiety-2-box p{
+    .anxiety-2-box .caracter-name2{
         font-size: 10px;
         padding: 5px;
     }
-    
+    .anxiety-2-box .caracter-name1{
+        display: none;
+    }
     }
 
     @media screen and (max-width: 490px) {
@@ -362,8 +371,12 @@ h1{
             padding-bottom: 40px;
             outline-offset: -10px;
         }
-        
-        .anxiety-2 .caracter-name{
+        .anxiety-2-box .caracter-name2{
+            display: none;
+        }
+        .anxiety-2-box .caracter-name1{
+            display: block;
+            text-align: right;
             font-size: 5px;
             padding-top: 3px;
         }
