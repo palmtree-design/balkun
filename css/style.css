@@ -182,7 +182,7 @@ h1 {
 
 @media screen and (max-width: 490px) {
     .top-img {
-        background-image: url(../img/sp-topIMG.jpg);
+        background-image: url(../img/sp-top-img.jpg);
     }
 
     .top-message {
