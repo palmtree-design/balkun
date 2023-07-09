@@ -5,6 +5,8 @@
 body {
     font-size: 16px;
     color: #333;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 ul,
