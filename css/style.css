@@ -1107,7 +1107,7 @@ h1 {
     .process-bg2,
     .process-bg3 {
         background-size: 50%;
-        height: auto;
+        height: 160px;
         padding: 10px;
     }
 
@@ -1194,12 +1194,12 @@ details:last-child {
 
 @media screen and (max-width: 490px) {
     details {
-        width: 330px;
+        width: 340px;
         margin: 5px auto;
-        font-size: 0.81rem;
+        font-size: 0.80rem;
     }
     summary {
-        font-size: 0.81rem;
+        font-size: 0.80rem;
         padding: 5px 5px 5px 0;
     }
     .summary-content img {
