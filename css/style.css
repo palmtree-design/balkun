@@ -3,7 +3,7 @@
 /* 共通項目----------------------------- */
 
 body {
-    font-size: 16px;
+    font-size: 18px;
     color: #333;
     font-family: 'Inter', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
@@ -390,11 +390,11 @@ h1 {
     }
 
     .message-txt h2 {
-        font-size: 1.43rem;
+        font-size: 1.5rem;
     }
 
     .message-txt p {
-        font-size: 0.85rem;
+        font-size: 0.83rem;
         text-align: left;
     }
 }
@@ -410,7 +410,7 @@ h1 {
     }
 
     .message-txt p {
-        font-size: 0.81rem;
+        font-size: 0.9rem;
     }
 
 }
@@ -640,6 +640,10 @@ h1 {
 .about-message-txt-h3 {
     margin: 0 0 2rem 0;
 }
+.bold{
+    font-weight: bold;
+    font-size: 2rem;
+}
 
 @media screen and (max-width: 1100px) {
     .bold {
@@ -651,7 +655,7 @@ h1 {
     }
 
     .about-no-txt {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
     }
 
     .about-list {
@@ -818,7 +822,7 @@ h1 {
     }
 
     .creators-cap {
-        font-size: 0.625rem;
+        font-size: 0.8rem;
         width: 188px;
     }
 
@@ -863,9 +867,11 @@ h1 {
 
 .events-txt {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
-
+.events-caption{
+    font-size: 0.9rem;
+}
 .flex figure {
     margin: 0 15px;
     text-align: center;
@@ -888,7 +894,7 @@ h1 {
     }
 
     .events-caption {
-        font-size: 0.5rem;
+        font-size: 0.73rem;
     }
 }
 
@@ -958,7 +964,7 @@ h1 {
     }
 
     .voice-flexitem p {
-        font-size: 0.75rem;
+        font-size: 0.71rem;
         width: 260px;
     }
 
@@ -980,6 +986,7 @@ h1 {
         .voice-flexitem p {
             margin: 0 auto;
             padding-bottom: 20px;
+            font-size: 0.79rem;
         }
 
         .flex1,
@@ -1078,7 +1085,7 @@ h1 {
 
 @media screen and (max-width: 1100px) {
     .process-list {
-        width: 210px;
+        width: 290px;
     }
 
     .process-dt1,
@@ -1088,11 +1095,12 @@ h1 {
     }
 
     .process-dditem {
-        font-size: 0.8rem;
+        font-size: 1rem;
+        margin-bottom: 15px;
     }
 
     .process-ddtext {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 
     .process-bg1,
@@ -1112,7 +1120,7 @@ h1 {
 /* question----------------------------------------------- */
 details {
     width: 720px;
-    margin: 20px auto;
+    margin: 25px auto;
     font-size: 1.25rem;
     border: 4px solid#F15A25;
     background-color: #FEEFDD;
@@ -1124,7 +1132,7 @@ summary {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    padding: 12px 12px 0 0;
+    padding: 18px 18px 8px 0;
 }
 
 .details-txt {
@@ -1163,14 +1171,14 @@ details:last-child {
 
 @media screen and (max-width: 1100px) {
     details {
-        width: 400px;
+        width: 490px;
         margin: 5px auto;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 
     summary {
-        font-size: 0.8rem;
-        padding: 5px 5px 0 0;
+        font-size: 1.2rem;
+        padding: 5px 5px 5px 0;
     }
 
     .summary-content img {
@@ -1179,7 +1187,7 @@ details:last-child {
 
     .blue,
     .red {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         margin-left: 10px;
     }
 }
@@ -1188,8 +1196,17 @@ details:last-child {
     details {
         width: 330px;
         margin: 5px auto;
-        font-size: 0.8rem;
+        font-size: 0.81rem;
     }
+    summary {
+        font-size: 0.81rem;
+        padding: 5px 5px 5px 0;
+    }
+    .summary-content img {
+        margin-top: 5px;
+    }
+
+
 }
 
 /* questionここまで---------------------------------------- */
@@ -1203,9 +1220,11 @@ details:last-child {
     padding: 50px 0;
     width: 85%;
     margin: 0 auto;
-    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 100px;
+}
+.contact-message p{
+    font-size: 0.67rem;
 }
 
 @media screen and (max-width: 1100px) {
@@ -1261,6 +1280,9 @@ footer p {
     border-bottom: 1px solid #333;
     margin-right: 50px;
 }
+.footer-dllist dd {
+    font-size: 1rem;
+}
 .footer__copyligt{
     text-align: center;
     padding: 50px 0;
@@ -1284,7 +1306,10 @@ footer p {
         width: 70px;
         padding: 0;
     }
-
+    .footer-dllist dd {
+        font-size: 0.7rem;
+    }
+    
     footer {
         background-size: 30%;
     }
