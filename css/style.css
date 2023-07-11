@@ -1229,7 +1229,7 @@ footer {
     background-color: #FAAE57;
     background-image: url(../img/footer-bgimg.png);
     background-position: 80% 70%;
-    padding: 100px 0;
+    padding: 80px 0 0 0;
 
 }
 
@@ -1259,7 +1259,10 @@ footer p {
     border-bottom: 1px solid #333;
     margin-right: 50px;
 }
-
+.footer__copyligt{
+    text-align: center;
+    padding: 50px 0;
+}
 @media screen and (max-width: 1100px) {
     .footer {
         padding-bottom: 40px;
