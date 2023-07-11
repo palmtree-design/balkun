@@ -36,11 +36,17 @@ a {
     position: sticky;
     top: 85%;
     z-index: 10;
+    margin-bottom: 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1100px) {
     .contact-btn img {
         width: 350px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .contact-btn img {
+        width: 300px;
     }
 }
 
@@ -712,9 +718,9 @@ h1 {
     width: 100vw;
 }
 
-.loop__box img {
+/* .loop__box img {
     min-width: 100vw;
-}
+} */
 
 .loop__box img:first-child {
     animation: loop 50s -25s linear infinite;
@@ -741,6 +747,17 @@ h1 {
 
     to {
         transform: translateX(-200%);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .loop__box img{
+        height: 180px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .loop__box img{
+        height: 120px;
     }
 }
 
@@ -1181,7 +1198,7 @@ details:last-child {
     margin: 0 auto;
     font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 @media screen and (max-width: 1100px) {
