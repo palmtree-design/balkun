@@ -1238,12 +1238,15 @@ details:last-child {
 
 @media screen and (max-width: 490px) {
     .contact-message {
-        width: 350px;
+        max-width: 350px;
         padding: 30px 0;
         margin-bottom: 80px;
     }
     .contact-message p{
         font-size: 0.8rem;
+    }
+    #contact .wrapper {
+        max-width: 350px;
     }
 }
 
