@@ -781,16 +781,19 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    padding: 30px;
+    padding: 0 ;
     margin: 50px 0 80px 0;
 }
 
 .creators-item a:hover {
-    opacity: 0.8;
+    opacity: 0.7;
     transition: all 0.8s;
 }
+.creators-item{
+    text-align: center;
+}
 
-.tiktok-btn {
+/* .tiktok-btn {
     width: 80%;
     margin: 0 auto;
     background-image: url(../img/seach.png);
@@ -803,16 +806,19 @@ h1 {
     font-weight: 600;
     margin-top: 20px;
     box-shadow: 2px 2px 2px #a09e9e;
-}
+} */
 
 @media screen and (max-width: 1100px) {
     .creators-list {
-        grid-template-columns: 1fr 1fr;
-        column-gap: 12%;
-        row-gap: 50px;
+        grid-template-columns: 1fr 1fr ;
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+    .creators-img {
+        width: 240px;
     }
 
-    .tiktok-btn {
+    /* .tiktok-btn {
         background-size: 10px 14px;
         background-position: 130px 7px;
         font-size: 0.625rem;
@@ -824,41 +830,40 @@ h1 {
     .creators-cap {
         font-size: 0.8rem;
         width: 188px;
-    }
+    } */
 
-    .creators-img {
-        width: 188px;
-    }
 
 }
+@media screen and (max-width: 550px) {
+    .creators-list {
+        column-gap:9px;
+        row-gap: 9px;
+    }
+    .creators-img {
+        width: 215px;
+    }
 
+
+}
 @media screen and (max-width: 490px) {
     .creators-list {
-        grid-template-columns: 1fr;
-        column-gap: 12%;
-        row-gap: 50px;
+        column-gap: 6px;
+        row-gap: 6px;
     }
-
     .creators-img {
-        display: block;
+        width: 165px;
     }
 
-    .creators-item {
-        margin: 0 auto;
-    }
 
-    .creators-cap {
-        margin-top: 10px;
-    }
-
-    .events-caption {
-        margin-bottom: 10px;
-    }
 }
 
 /* creatorsここまで------------------------------------------- */
 
 /* events ----------------------------------------------------*/
+    .events-caption {
+        margin-bottom: 10px;
+    }
+
 .bgc {
     background-color: rgba(255, 255, 255, 0.7);
     margin: 50px 0 100px 0;
