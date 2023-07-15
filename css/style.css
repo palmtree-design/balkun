@@ -1214,7 +1214,7 @@ details:last-child {
     font-weight: 600;
     margin-bottom: 100px;
 }
-.contact-message p{
+.contact-message p {
     font-size: 1.5rem;
 }
 
@@ -1336,4 +1336,108 @@ footer p {
         margin-bottom: 30px;
 
     }
+}
+
+
+/* liver-page--------------------------------------------- */
+
+#liver-wrapper {
+    margin: 0 auto;
+    padding: 0 5%;
+}
+#liver-top {
+    width: 100%;
+}
+#liver-top h1 img {
+    width: 100%;
+}
+#liver-top-h1 {
+    margin: 0 auto;
+}
+.liver-title {
+    margin: 0 auto;
+}
+.liver-title h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+}
+
+.liver-title h2 img {
+    width: 70%;
+}
+
+
+.liver-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 50px;
+}
+
+.liver-item a:hover {
+    opacity: 0.7;
+    transition: all 0.8s;
+}
+
+.liver-item {
+    width: 85%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+} 
+
+.liver-item a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.liver-item a img {
+    width: 100%;
+    border-radius: 0 30px 0 30px;
+    box-shadow: 2px 3px 3px 0 rgba(0, 0, 0, .5);
+}
+
+.liver-item a .liver-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+    color: #fff;
+    height: 20%;
+    position: absolute;
+    border-radius: 0 30px 0 30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #EE8F26;
+}
+
+@media screen and (max-width: 1100px) {
+    #liver-wrapper {
+        padding: 4%;
+    }
+    .liver-list {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 25px;
+        row-gap: 25px;
+    }
+    .liver-item {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 780px) {
+    #liver-wrapper {
+        padding: 3%;
+    }
+    .liver-list {
+        grid-template-columns: 1fr 1fr ;
+        column-gap: 25px;
+        row-gap: 25px;
+    }
+    .liver-item {
+        width: 95%;
+    }
+
 }
