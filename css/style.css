@@ -793,7 +793,7 @@ h1 {
     text-align: center;
 }
 .creators-img {
-    width: 100%;
+    width: 300px;
 }
 
 #liver-btn {
@@ -849,6 +849,12 @@ h1 {
         row-gap: 15px;
     }
 
+}
+@media screen and (max-width: 490px) {
+    .c-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }
 
 /* @media screen and (max-width: 550px) {
@@ -1436,6 +1442,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 0.8em;
     color: #fff;
     height: 20%;
@@ -1445,6 +1452,7 @@ footer p {
     left: 0;
     right: 0;
     background-color: #EE8F26;
+    line-height: 1.1em;
 }
 
 .btn-area {
@@ -1513,6 +1521,9 @@ footer p {
     .btn-area a {
         width: 45%;
     }
-
-
+}
+@media screen and (max-width: 490px) {
+    .liver-item a .liver-name {
+        font-size: 0.68em;
+    }
 }
