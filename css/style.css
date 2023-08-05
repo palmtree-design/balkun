@@ -34,7 +34,7 @@ a {
 .contact-btn {
     text-align: center;
     position: sticky;
-    top: 85%;
+    top: 84%;
     z-index: 10;
     margin-bottom: 20px;
 }
@@ -140,7 +140,7 @@ a {
 
 .top-img {
     height: 723px;
-    background-image: url(../img/top-img.jpg);
+    background-image: url(../img/top-img.png);
     background-position: center;
 }
 
@@ -177,7 +177,7 @@ h1 {
 
 @media screen and (max-width: 1100px) {
     .top-img {
-        background-image: url(../img/tb-top-img.jpg);
+        background-image: url(../img/tb-top-img.png);
         height: 438px;
     }
 
@@ -196,7 +196,7 @@ h1 {
 
 @media screen and (max-width: 490px) {
     .top-img {
-        background-image: url(../img/sp-top-img.jpg);
+        background-image: url(../img/sp-top-img.png);
     }
 
     .top-message {
