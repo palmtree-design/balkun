@@ -64,7 +64,7 @@ a {
 
 .jpn {
     font-size: 1.25rem;
-    background-color: #F15A25;
+    background-color: #63A139;
     color: #fff;
 }
 
@@ -73,8 +73,10 @@ a {
 }
 
 .title-item {
-    background-image: url(../img/h2-img.png);
+    background-image: url(../img/logo-1.png);
     background-repeat: no-repeat;
+    background-size: 29%;
+    background-position: left;
     max-width: 37%;
     margin: 0 auto;
     height: 112px;
@@ -146,14 +148,28 @@ a {
 }
 
 .top-message {
-    background-color: rgba(247, 147, 35, 0.5);
+/*     background: linear-gradient(180deg, rgba(48, 121, 63,.3), rgb(33, 44, 36)); */
     font-size: 4rem;
     line-height: 1.7;
     padding: 0 30px;
+    color: #fff;
+    text-shadow:
+      3px 3px 4px #7cd242,
+      -3px 3px 4px #7cd242,
+      -3px -3px 4px #7cd242,
+      3px -3px 4px #7cd242;
+/*     1px 1px 0 #01471c,
+            -1px 1px 0 #02614e,
+            1px -1px #02614e,
+            -1px -1px #02614e,
+            0 1px 0 #1f8a2f,
+            0 -1px 0 #fffab4,
+            -1px 0 0 #4cb441,
+            1px 0 0 #128010; */
 }
 
 .top-position {
-    margin-left: 20%;
+    margin-left: 15%;
     padding-top: 6%;
 }
 
@@ -161,22 +177,34 @@ a {
     display: inline-block;
     font-size: 2rem;
     font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #FFF265;
     padding: 2px 20px 0;
     margin-left: 30px;
-    /* -webkit-text-stroke: 1px rgb(255, 255, 255);  */
-    /* text-stroke: 1px rgb(255, 255, 255); */
+    color: white;
+    font-weight :bold;
 }
 
 h1 {
     font-size: 3rem;
     font-weight: bold;
     margin: 60px 0;
+    color: #fff;
     text-shadow: 2px 2px #fff;
     /* -webkit-text-stroke: 1px rgb(255, 255, 255);  */
+    text-shadow:
+      3px 3px 4px #7cd242,
+      -3px 3px 4px #7cd242,
+      -3px -3px 4px #7cd242,
+      3px -3px 4px #7cd242;
+    padding: 0 30px;
+
 }
 
 @media screen and (max-width: 1100px) {
+
+    .top-position {
+        margin-left:3%;
+    }
     .top-img {
         background-image: url(../img/tb-top-img.png);
         height: 438px;
@@ -192,6 +220,9 @@ h1 {
 
     h1 {
         font-size: 1.8rem;
+        text-align: right;
+        padding-right: 7%;
+        margin: 150px 0 20px;
     }
 }
 
@@ -206,7 +237,7 @@ h1 {
     }
 
     .top-position {
-        margin-left: 10%;
+        margin-left: 1%;
         padding-top: 6%;
     }
 
@@ -215,7 +246,10 @@ h1 {
     }
 
     h1 {
-        font-size: 1.31rem;
+        font-size: 1.7rem;
+        padding-right: 4%;
+        margin: 170px 0 30px;
+
     }
 
 }
@@ -344,7 +378,7 @@ h1 {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.02em;
-    color: #F15A25;
+    color: #48a208;
 }
 
 .hbg-menu {
@@ -447,8 +481,10 @@ h1 {
 .anxiety-title {
     font-size: 2.5rem;
     display: inline-block;
-    border-bottom: 4px solid #F8931F;
+    border-bottom: 4px solid #076201;
     margin-bottom: 50px;
+    color: white;
+	text-shadow: 1px 1px 2px #23430C;
 }
 
 .anxiety-1 div {
@@ -487,6 +523,12 @@ h1 {
 .anxiety-2-box .caracter-name1 {
     display: none;
 }
+.anxiety-2-box .an-1 {
+    align-items: center;
+}
+.anxiety-2-box .an-1 .an-img {
+    width: 90%;
+}
 
 @media screen and (max-width: 1100px) {
     .anxiety-title {
@@ -512,7 +554,7 @@ h1 {
 
     .anxiety-2-box :first-child img {
         width: 300px;
-        padding-bottom: 50px;
+        padding: 0 0 50px 20px;
     }
 
     .anxiety-2-box :last-child img {
@@ -545,7 +587,7 @@ h1 {
 
     .anxiety-2-box :first-child img {
         width: 250px;
-        padding: 0 0 0 5px;
+        padding: 0 0 0 20px;
     }
 
     .anxiety-2-box :last-child img {
@@ -600,7 +642,9 @@ h1 {
 
 .about-no {
     font-size: 6rem;
-    color: rgba(247, 147, 35, 0.4);
+
+    color: rgba(255, 242, 102, 0.6);
+
     font-weight: bolder;
     line-height: 1.2;
 }
@@ -780,6 +824,22 @@ h1 {
 }
 
 
+.insta-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.insta-btn a {
+    width: 55%;
+    max-width: 390px;
+}
+
+.insta-btn a img {
+    width: 100%;
+}
+
+
 /* #aboutここまで------------------------------------------ */
 
 
@@ -931,6 +991,7 @@ h1 {
 .events-img {
     width: 100%;
     height: auto;
+    box-shadow: 3px 3px 5px #5d5f5c;
 }
 
 @media screen and (max-width: 1100px) {
@@ -975,7 +1036,7 @@ h1 {
 }
 
 .voice-bg {
-    background-color: rgba(247, 147, 35, 0.5);
+    background-color: rgba(99, 161, 57, 0.2);
     margin: 10px 0 0 0;
 }
 
@@ -990,7 +1051,7 @@ h1 {
 .voice-flexitem img {
     display: block;
     border-radius: 30px;
-    border: 4px solid #F15A25;
+    border: 4px solid #a1f3a1;
 
 }
 
@@ -1078,15 +1139,15 @@ h1 {
 }
 
 .process-dt1 {
-    color: #F8931F;
+    color: #48e933;
 }
 
 .process-dt2 {
-    color: #F15A25;
+    color: #2ddc4a;
 }
 
 .process-dt3 {
-    color: #EC1D1D;
+    color: #2cc03d;
 }
 
 .process-bg1 {
@@ -1179,8 +1240,8 @@ details {
     width: 720px;
     margin: 25px auto;
     font-size: 1.25rem;
-    border: 4px solid#F15A25;
-    background-color: #FEEFDD;
+    border: 4px solid#9CDC74;
+    background-color: #fcffd6;
 }
 
 summary {
@@ -1320,7 +1381,7 @@ details:last-child {
 
 /* footer--------------------------------------------- */
 footer {
-    background-color: #FAAE57;
+    background-color: #9DDD75;
     background-image: url(../img/footer-bgimg.png);
     background-position: 80% 70%;
     padding: 80px 0 0 0;
@@ -1336,7 +1397,7 @@ footer {
 
 footer p {
     font-size: 1.75rem;
-    border-bottom: 1px solid #F8931F;
+    border-bottom: 1px solid #63A038;
     display: inline-block;
     padding: 50px 0 0 20px;
     margin-bottom: 40px;
@@ -1346,7 +1407,17 @@ footer p {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin: 10px auto 20px;
+    flex-direction: column;
+    margin: 10px auto 15px;
+}
+.footer-dllist a {
+    width: 15%;
+    display: flex;
+    margin: 5px auto 10px;
+}
+.footer-dllist a img {
+    width: 100%;
+    align-items: center;
 }
 
 .footer-dllist dt {
@@ -1358,6 +1429,7 @@ footer p {
 
 .footer-dllist dd {
     font-size: 1rem;
+    padding: 10px 0 0;
 }
 
 .footer__copyligt {
